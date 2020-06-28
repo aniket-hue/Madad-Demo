@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/Madad-Demo/static/js/main.eb8916a0.chunk.js",
+    "main.js.map": "/Madad-Demo/static/js/main.eb8916a0.chunk.js.map",
+    "runtime-main.js": "/Madad-Demo/static/js/runtime-main.28702acc.js",
+    "runtime-main.js.map": "/Madad-Demo/static/js/runtime-main.28702acc.js.map",
+    "static/js/2.59462164.chunk.js": "/Madad-Demo/static/js/2.59462164.chunk.js",
+    "static/js/2.59462164.chunk.js.map": "/Madad-Demo/static/js/2.59462164.chunk.js.map",
+    "index.html": "/Madad-Demo/index.html",
+    "precache-manifest.034a0420a2776b6fcb3c1d669aae3e31.js": "/Madad-Demo/precache-manifest.034a0420a2776b6fcb3c1d669aae3e31.js",
+    "service-worker.js": "/Madad-Demo/service-worker.js",
+    "static/js/2.59462164.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.59462164.chunk.js.LICENSE.txt",
+    "static/media/architect.svg": "/Madad-Demo/static/media/architect.0a0789d9.svg",
+    "static/media/back.jpeg": "/Madad-Demo/static/media/back.1eb3b8db.jpeg",
+    "static/media/banking.svg": "/Madad-Demo/static/media/banking.c9247515.svg",
+    "static/media/cardbg.svg": "/Madad-Demo/static/media/cardbg.5a819b3d.svg",
+    "static/media/consultant.svg": "/Madad-Demo/static/media/consultant.3c9fa23b.svg",
+    "static/media/cooking.svg": "/Madad-Demo/static/media/cooking.3e124644.svg",
+    "static/media/demo_image.svg": "/Madad-Demo/static/media/demo_image.b3af1d85.svg",
+    "static/media/depression.svg": "/Madad-Demo/static/media/depression.cb253e58.svg",
+    "static/media/electrician.svg": "/Madad-Demo/static/media/electrician.2534f3d2.svg",
+    "static/media/experts.svg": "/Madad-Demo/static/media/experts.5410519d.svg",
+    "static/media/flights.svg": "/Madad-Demo/static/media/flights.5a9a96a5.svg",
+    "static/media/hospital.svg": "/Madad-Demo/static/media/hospital.743aca9c.svg",
+    "static/media/medicine.svg": "/Madad-Demo/static/media/medicine.ba675f12.svg",
+    "static/media/ngo.svg": "/Madad-Demo/static/media/ngo.7fde0286.svg",
+    "static/media/trial.svg": "/Madad-Demo/static/media/trial.6526ba18.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28702acc.js",
+    "static/js/2.59462164.chunk.js",
+    "static/js/main.eb8916a0.chunk.js"
+  ]
+}
