@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
-import { AppBar, Toolbar, useScrollTrigger, Tab, Tabs, Button } from '@material-ui/core';
+import React, { Component } from 'react';
+import { AppBar, Toolbar, useScrollTrigger, Tab, Tabs, Box, Collapse } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
-import Logo from '../../assets/Logo.png';
+import Helpline from '../../assets/helpline.svg';
+import classes2 from './Header.module.css'
+import classNames from 'classnames'
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -23,10 +25,13 @@ ElevationScroll.propTypes = {
 const styles = theme => ({
     toolbarMargin: {
         ...theme.mixins.toolbar,
-        marginBottom:"2em"
+        marginBottom: "1.5em",
     },
     logo: {
-        width: "18em"
+        fontSize: "4rem",
+        fontFamily: 'Raleway',
+        cursor: "pointer",
+        color: "#1b1b1c"
     },
     buttonContainer: {
         marginLeft: "auto"
@@ -34,27 +39,46 @@ const styles = theme => ({
     tab: {
         ...theme.typography.tab,
         marginLeft: "25px",
-    }
-    ,button: {
-        ...theme.typography.estimate,
-        marginRight: "25px",
-        marginLeft: "50px",
-        borderRadius: "50px",
-        height: "45px",
         color: "white"
     },
     toolbar: {
-        marginLeft: "50px",
-        marginRight:"50px"
+        marginRight: "50px"
+    },
+    contact: {
+        background: "#bbbbbb",
+        width: "100%",
+        paddingLeft: "10px",
+        height: "20px",
+    },
+    support_img: {
+        width: "1.4em",
+        marginLeft: "25px",
+        cursor: "pointer",
+        opacity: ".5",
+        '&:hover': {
+            opacity: ".6"
+        }
+    },
+    contactDetails: {
+        color: "black",
+        fontSize: ".9rem",
+        fontFamily: "Raleway",
+        fontWeight: "500"
     },
     appbar: {
-        paddingTop: "30px",
+        background: "#1b1b1c",
+    },
+    logo_box: {
+        background: "white",
+        width: "40%",
+        textAlign: "center",
     }
 })
 
 class Header extends Component {
     state = {
-        page: 0
+        page: 0,
+        contactShow: false
     }
     pageHandle = (event, value) => {
         this.setState({ page: value })
@@ -64,18 +88,36 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <ElevationScroll>
-                    <AppBar className={classes.appbar}>
-                        <Toolbar disableGutters={true} className={classes.toolbar}>
-                            <img src={Logo} />
-                            <Tabs onChange={this.pageHandle} value={this.state.page} className={classes.buttonContainer}>
-                                <Tab className={classes.tab} label="Home" />
-                                <Tab className={classes.tab} label="Services" />
-                                <Tab className={classes.tab} label="Bussiness" />
-                                <Tab className={classes.tab} label="Log In" />
-                            </Tabs>
-                        </Toolbar>
-                    </AppBar>
+                    <div>
+                        <AppBar className={classes.appbar}>
+                            <Toolbar disableGutters={true} className={classes.toolbar}>
+                                <Box className={classNames(classes.logo_box, classes2.logo_box)}>
+                                    <span className={classNames(classes.logo, classes2.logo)}>madad</span>
+                                </Box>
+                                <Tabs onChange={this.pageHandle} value={this.state.page} className={classes.buttonContainer}>
+                                    <Tab className={classes.tab} label="Home" />
+                                    <Tab className={classes.tab} label="Services" />
+                                    <Tab className={classes.tab} label="Bussiness" />
+                                    <Tab className={classes.tab} label="Log In" />
+                                    <Tab className={classes.tab} label="About Us" />
+                                    <img onClick={() => (this.setState({ contactShow: !this.state.contactShow }))} src={Helpline} className={classes.support_img} />
+                                </Tabs>
+                            </Toolbar>
+                            <Collapse in={this.state.contactShow} timeout="auto">
+                                <Box className={classes.contact} >
+                                    <Box display="inline-flex">
+                                        <Box marginRight="10px"><span className={classes.contactDetails}>Contact - +91-XXXXXXXXXX</span></Box>
+                                        <span className={classes.contactDetails}>|</span>
+                                        <Box marginLeft="10px"><span className={classes.contactDetails}> Email - email@madad.com</span></Box>
+                                    </Box>
+                                </Box>
+                            </Collapse>
+                        </AppBar>
+
+                    </div>
                 </ElevationScroll>
+
+
                 <div className={classes.toolbarMargin} />
             </React.Fragment >
         )

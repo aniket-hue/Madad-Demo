@@ -1,0 +1,13 @@
+.logo_box{
+    transition: .3s linear;
+}
+.logo_box:hover{
+    background: #1b1b1c;
+}
+
+.logo_box:hover>span{
+    color: white;
+}
+.logo{
+    transition: .3s linear;
+}

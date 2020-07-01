@@ -3,10 +3,10 @@ export default createMuiTheme(
     {
         palette: {
             primary: {
-                main: `#fff`
+                main: `#1b1b1c`
             },
             secondary: {
-                main: `#3764eb`
+                main: `#FFFF`
             }
         },
         typography: {
@@ -17,11 +17,6 @@ export default createMuiTheme(
                 fontSize: "1rem",
                 minWidth: 10,
             },
-            estimate: {
-                fontFamily: "Pacifico",
-                fontSize: "1rem",
-                textTransform: "none",
-            }
         }
     }
 
