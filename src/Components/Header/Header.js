@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Helpline from '../../assets/helpline.svg';
 import classes2 from './Header.module.css'
 import classNames from 'classnames'
+import { Link, Redirect, withRouter } from 'react-router-dom';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -81,7 +82,9 @@ class Header extends Component {
         contactShow: false
     }
     pageHandle = (event, value) => {
-        this.setState({ page: value })
+        this.setState({ page: value });
+        this.props.history.push(`/${event.target.title}`)
+        
     }
     render() {
         const { classes } = this.props
@@ -95,10 +98,10 @@ class Header extends Component {
                                     <span className={classNames(classes.logo, classes2.logo)}>madad</span>
                                 </Box>
                                 <Tabs onChange={this.pageHandle} value={this.state.page} className={classes.buttonContainer}>
-                                    <Tab className={classes.tab} label="Home" />
+                                    <Tab className={classes.tab} label="Home" name="" />
                                     <Tab className={classes.tab} label="Services" />
                                     <Tab className={classes.tab} label="Bussiness" />
-                                    <Tab className={classes.tab} label="Log In" />
+                                    <Tab className={classes.tab} label="Log In" title="login" />
                                     <Tab className={classes.tab} label="About Us" />
                                     <img onClick={() => (this.setState({ contactShow: !this.state.contactShow }))} src={Helpline} className={classes.support_img} />
                                 </Tabs>
@@ -124,4 +127,4 @@ class Header extends Component {
     }
 }
 
-export default withStyles(styles)(Header);
+export default withRouter(withStyles(styles)(Header));

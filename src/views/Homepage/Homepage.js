@@ -116,7 +116,6 @@ class Homepage extends Component {
         const { classes } = this.props
         return (
             <React.Fragment>
-                <Header />
                 <Box display="flex" flexWrap="wrap" justifyContent="space-between">
                     <Box width="640px" paddingLeft="50px">
                         <span className={classes.h3}>
