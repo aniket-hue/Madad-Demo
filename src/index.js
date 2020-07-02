@@ -6,15 +6,17 @@ import Homepage from './views/Homepage/Homepage'
 import Header from './Components/Header/Header'
 import { Route } from 'react-router'
 import Login from './views/Login/Login'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Switch } from 'react-router-dom'
 class Root extends Component {
     render() {
         return (
             <BrowserRouter>
                 <ThemeProvider theme={Theme}>
                     <Header />
-                    <Route exact path="/" component={Homepage} />
-                    <Route path="/Login" component={Login} />
+                    <Switch>
+                        <Route exact path="/Madad-Demo/Home" component={Homepage} />
+                        <Route exact path="/Madad-Demo/Log-in" component={Login} />
+                    </Switch>
                 </ThemeProvider>
             </BrowserRouter>
         )

@@ -81,10 +81,10 @@ class Header extends Component {
         page: 0,
         contactShow: false
     }
-    pageHandle = (event, value) => {
+    pageHandle = (event, value, title) => {
         this.setState({ page: value });
-        this.props.history.push(`/${event.target.title}`)
-        
+        this.props.history.push(`/Madad-Demo/${event.target.textContent.split(' ').join('-')}`)
+        console.log(event.target)
     }
     render() {
         const { classes } = this.props
@@ -98,11 +98,11 @@ class Header extends Component {
                                     <span className={classNames(classes.logo, classes2.logo)}>madad</span>
                                 </Box>
                                 <Tabs onChange={this.pageHandle} value={this.state.page} className={classes.buttonContainer}>
-                                    <Tab className={classes.tab} label="Home" name="" />
-                                    <Tab className={classes.tab} label="Services" />
-                                    <Tab className={classes.tab} label="Bussiness" />
-                                    <Tab className={classes.tab} label="Log In" title="login" />
-                                    <Tab className={classes.tab} label="About Us" />
+                                    <Tab className={classes.tab} label="Home" title="/" />
+                                    <Tab className={classes.tab} label="Services" title="/Log-In" />
+                                    <Tab className={classes.tab} label="Bussiness" title="/Log-In" />
+                                    <Tab className={classes.tab} label="Log In" title="/Log-In" />
+                                    <Tab className={classes.tab} label="About Us" title="/Log-In" />
                                     <img onClick={() => (this.setState({ contactShow: !this.state.contactShow }))} src={Helpline} className={classes.support_img} />
                                 </Tabs>
                             </Toolbar>
