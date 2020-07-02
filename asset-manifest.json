@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Madad-Demo/Home/static/css/main.a7a3ec54.chunk.css",
-    "main.js": "/Madad-Demo/Home/static/js/main.ae2ea6ab.chunk.js",
-    "main.js.map": "/Madad-Demo/Home/static/js/main.ae2ea6ab.chunk.js.map",
+    "main.js": "/Madad-Demo/Home/static/js/main.ddd573d8.chunk.js",
+    "main.js.map": "/Madad-Demo/Home/static/js/main.ddd573d8.chunk.js.map",
     "runtime-main.js": "/Madad-Demo/Home/static/js/runtime-main.06581a5b.js",
     "runtime-main.js.map": "/Madad-Demo/Home/static/js/runtime-main.06581a5b.js.map",
     "static/css/2.4707e12a.chunk.css": "/Madad-Demo/Home/static/css/2.4707e12a.chunk.css",
     "static/js/2.198222ab.chunk.js": "/Madad-Demo/Home/static/js/2.198222ab.chunk.js",
     "static/js/2.198222ab.chunk.js.map": "/Madad-Demo/Home/static/js/2.198222ab.chunk.js.map",
     "index.html": "/Madad-Demo/Home/index.html",
-    "precache-manifest.6dd8426994af1760dbf017c02c00affc.js": "/Madad-Demo/Home/precache-manifest.6dd8426994af1760dbf017c02c00affc.js",
+    "precache-manifest.9cba321a8d8a32c7628c7914fb808bd8.js": "/Madad-Demo/Home/precache-manifest.9cba321a8d8a32c7628c7914fb808bd8.js",
     "service-worker.js": "/Madad-Demo/Home/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/Madad-Demo/Home/static/css/2.4707e12a.chunk.css.map",
     "static/css/main.a7a3ec54.chunk.css.map": "/Madad-Demo/Home/static/css/main.a7a3ec54.chunk.css.map",
@@ -40,6 +40,6 @@
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.198222ab.chunk.js",
     "static/css/main.a7a3ec54.chunk.css",
-    "static/js/main.ae2ea6ab.chunk.js"
+    "static/js/main.ddd573d8.chunk.js"
   ]
 }
