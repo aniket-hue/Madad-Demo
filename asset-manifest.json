@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Madad-Demo/static/css/main.a5296e31.chunk.css",
-    "main.js": "/Madad-Demo/static/js/main.0a4e310d.chunk.js",
-    "main.js.map": "/Madad-Demo/static/js/main.0a4e310d.chunk.js.map",
+    "main.js": "/Madad-Demo/static/js/main.49b645a0.chunk.js",
+    "main.js.map": "/Madad-Demo/static/js/main.49b645a0.chunk.js.map",
     "runtime-main.js": "/Madad-Demo/static/js/runtime-main.28702acc.js",
     "runtime-main.js.map": "/Madad-Demo/static/js/runtime-main.28702acc.js.map",
     "static/css/2.4b36e02c.chunk.css": "/Madad-Demo/static/css/2.4b36e02c.chunk.css",
     "static/js/2.1ac34543.chunk.js": "/Madad-Demo/static/js/2.1ac34543.chunk.js",
     "static/js/2.1ac34543.chunk.js.map": "/Madad-Demo/static/js/2.1ac34543.chunk.js.map",
     "index.html": "/Madad-Demo/index.html",
-    "precache-manifest.37b1eb33148b5c26d1afdb44ab2c2945.js": "/Madad-Demo/precache-manifest.37b1eb33148b5c26d1afdb44ab2c2945.js",
+    "precache-manifest.0040d38dc8433d0161d3a5ddfb2833ce.js": "/Madad-Demo/precache-manifest.0040d38dc8433d0161d3a5ddfb2833ce.js",
     "service-worker.js": "/Madad-Demo/service-worker.js",
     "static/css/2.4b36e02c.chunk.css.map": "/Madad-Demo/static/css/2.4b36e02c.chunk.css.map",
     "static/css/main.a5296e31.chunk.css.map": "/Madad-Demo/static/css/main.a5296e31.chunk.css.map",
@@ -36,6 +36,6 @@
     "static/css/2.4b36e02c.chunk.css",
     "static/js/2.1ac34543.chunk.js",
     "static/css/main.a5296e31.chunk.css",
-    "static/js/main.0a4e310d.chunk.js"
+    "static/js/main.49b645a0.chunk.js"
   ]
 }
