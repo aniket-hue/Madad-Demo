@@ -1,30 +1,26 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { ThemeProvider } from '@material-ui/core'
-import Theme from './Components/Theme'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './views/Homepage/Homepage'
 import Header from './Components/Header/Header'
 import { Route } from 'react-router'
-import Login from './views/Login/Login'
 import { BrowserRouter, Switch } from 'react-router-dom'
+import Index from './views/Register';
 class Root extends Component {
     render() {
         return (
             <BrowserRouter>
-                <ThemeProvider theme={Theme}>
                     <Header />
                     <Switch>
-                        <Route exact path="/Madad-Demo/Home" component={Homepage} />
-                        <Route exact path="/Madad-Demo/Log-in" component={Login} />
+                        <Route exact path="/Madad-Demo" component={Homepage} />
+                        <Route exact path="/Madad-Demo/login" component={Index} />
                     </Switch>
-                </ThemeProvider>
             </BrowserRouter>
         )
     }
 }
 
 ReactDOM.render(
-    <Root />
-    ,
+    <Root />,
     document.getElementById('root')
 )

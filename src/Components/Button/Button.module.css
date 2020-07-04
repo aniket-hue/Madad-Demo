@@ -1,0 +1,13 @@
+.button{
+    background: black;
+    color: white;
+    font-family: "Raleway";
+    border: 0;
+    transition: .3s linear;
+}
+.button:hover{
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+

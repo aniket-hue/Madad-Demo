@@ -1,5 +1,14 @@
-.More{
-    border: 2px solid #1b1b1c;
-    padding: .3em;
-    color: #fff310;
+.container{
+    background: url(../../assets/back.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.read_more{
+    border: 1px solid inherit;
+    background: black;
+}
+
+.our_team{
+    border: 5px solid black;
 }

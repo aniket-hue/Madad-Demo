@@ -1,130 +1,56 @@
-import React, { Component } from 'react';
-import { AppBar, Toolbar, useScrollTrigger, Tab, Tabs, Box, Collapse } from '@material-ui/core';
-import { withStyles } from '@material-ui/styles';
-import PropTypes from 'prop-types';
-import Helpline from '../../assets/helpline.svg';
-import classes2 from './Header.module.css'
-import classNames from 'classnames'
-import { Link, Redirect, withRouter } from 'react-router-dom';
-
-function ElevationScroll(props) {
-    const { children, window } = props;
-    const trigger = useScrollTrigger({
-        disableHysteresis: true,
-        threshold: 0,
-        target: window ? window() : undefined,
-    });
-
-    return React.cloneElement(children, {
-        elevation: trigger ? 4 : 0,
-    });
-}
-ElevationScroll.propTypes = {
-    children: PropTypes.element.isRequired,
-    window: PropTypes.func,
-};
-const styles = theme => ({
-    toolbarMargin: {
-        ...theme.mixins.toolbar,
-        marginBottom: "1.5em",
-    },
-    logo: {
-        fontSize: "4rem",
-        fontFamily: 'Raleway',
-        cursor: "pointer",
-        color: "#1b1b1c"
-    },
-    buttonContainer: {
-        marginLeft: "auto"
-    },
-    tab: {
-        ...theme.typography.tab,
-        marginLeft: "25px",
-        color: "white"
-    },
-    toolbar: {
-        marginRight: "50px"
-    },
-    contact: {
-        background: "#bbbbbb",
-        width: "100%",
-        paddingLeft: "10px",
-        height: "20px",
-    },
-    support_img: {
-        width: "1.4em",
-        marginLeft: "25px",
-        cursor: "pointer",
-        opacity: ".5",
-        '&:hover': {
-            opacity: ".6"
-        }
-    },
-    contactDetails: {
-        color: "black",
-        fontSize: ".9rem",
-        fontFamily: "Raleway",
-        fontWeight: "500"
-    },
-    appbar: {
-        background: "#1b1b1c",
-    },
-    logo_box: {
-        background: "white",
-        width: "40%",
-        textAlign: "center",
-    }
-})
-
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import logo from '../../assets/logo.jpeg'
 class Header extends Component {
     state = {
-        page: 0,
-        contactShow: false
+        show: false,
+        currentScrollHeight: 100,
     }
-    pageHandle = (event, value, title) => {
-        this.setState({ page: value });
-        this.props.history.push(`/Madad-Demo/${event.target.textContent.split(' ').join('-')}`)
-        console.log(event.target)
+    componentDidMount() {
+        window.onscroll = () => {
+            const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+            if (this.state.currentScrollHeight != newScrollHeight) {
+                this.setState({ currentScrollHeight: newScrollHeight })
+            }
+        }
     }
     render() {
-        const { classes } = this.props
+        const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
+        const show = (this.state.show) ? "show" : "";
         return (
-            <React.Fragment>
-                <ElevationScroll>
-                    <div>
-                        <AppBar className={classes.appbar}>
-                            <Toolbar disableGutters={true} className={classes.toolbar}>
-                                <Box className={classNames(classes.logo_box, classes2.logo_box)}>
-                                    <span className={classNames(classes.logo, classes2.logo)}>madad</span>
-                                </Box>
-                                <Tabs onChange={this.pageHandle} value={this.state.page} className={classes.buttonContainer}>
-                                    <Tab className={classes.tab} label="Home" title="/" />
-                                    <Tab className={classes.tab} label="Services" title="/Log-In" />
-                                    <Tab className={classes.tab} label="Bussiness" title="/Log-In" />
-                                    <Tab className={classes.tab} label="Log In" title="/Log-In" />
-                                    <Tab className={classes.tab} label="About Us" title="/Log-In" />
-                                    <img onClick={() => (this.setState({ contactShow: !this.state.contactShow }))} src={Helpline} className={classes.support_img} />
-                                </Tabs>
-                            </Toolbar>
-                            <Collapse in={this.state.contactShow} timeout="auto">
-                                <Box className={classes.contact} >
-                                    <Box display="inline-flex">
-                                        <Box marginRight="10px"><span className={classes.contactDetails}>Contact - +91-XXXXXXXXXX</span></Box>
-                                        <span className={classes.contactDetails}>|</span>
-                                        <Box marginLeft="10px"><span className={classes.contactDetails}> Email - email@madad.com</span></Box>
-                                    </Box>
-                                </Box>
-                            </Collapse>
-                        </AppBar>
+            <div className="page-main-header">
+                <nav className='navbar navbar-expand-lg navbar-light bg-white fixed-top' style={{ background: "", opacity: opacity }}>
+                    <div className="container-fluid">
+                        <div className="logo-wrapper text-right navbar-brand " >
+                            <img style={{ width: "100%", maxHeight: "70px" }} src={logo} />
+                        </div>
+                        <button onClick={() => (this.setState({ show: !this.state.show }))} class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navbarSupportedContent"  className={"collapse navbar-collapse justify-content-end mr-5 " + show}>
+                            <ul className="navbar-nav  ">
+                                <li className="nav-item active">
+                                    <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} className="nav-link text-black ml-5" to="/Madad-Demo">Home <span className="sr-only">(current)</span></Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">About Us</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">Contact Us</a>
+                                </li>
+                                <li className="nav-item">
+                                    <span style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">|</span>
+                                </li>
 
+                                <li className="nav-item">
+                                    <Link style={{ fontFamily: "Raleway", fontWeight: "700", color: "#c7c5c6" }} to="/Madad-Demo/login" className="nav-link ml-5">Log In</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </ElevationScroll>
-
-
-                <div className={classes.toolbarMargin} />
-            </React.Fragment >
-        )
+                </nav>
+            </div >
+        );
     }
 }
-
-export default withRouter(withStyles(styles)(Header));
+export default Header;

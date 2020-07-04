@@ -1,0 +1,8 @@
+label, input, h1{
+    font-family: "Raleway";
+}
+
+.label{
+    font-weight: 600;
+    opacity: .5;
+}

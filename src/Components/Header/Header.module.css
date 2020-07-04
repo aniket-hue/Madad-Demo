@@ -11,3 +11,7 @@
 .logo{
     transition: .3s linear;
 }
+
+.text{
+    color: black;
+}
