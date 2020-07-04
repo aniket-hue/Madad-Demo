@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/Madad-Demo/static/css/main.c4bec777.chunk.css",
-    "main.js": "/Madad-Demo/static/js/main.9d882c7f.chunk.js",
-    "main.js.map": "/Madad-Demo/static/js/main.9d882c7f.chunk.js.map",
+    "main.css": "/Madad-Demo/static/css/main.a5296e31.chunk.css",
+    "main.js": "/Madad-Demo/static/js/main.0a4e310d.chunk.js",
+    "main.js.map": "/Madad-Demo/static/js/main.0a4e310d.chunk.js.map",
     "runtime-main.js": "/Madad-Demo/static/js/runtime-main.28702acc.js",
     "runtime-main.js.map": "/Madad-Demo/static/js/runtime-main.28702acc.js.map",
     "static/css/2.4b36e02c.chunk.css": "/Madad-Demo/static/css/2.4b36e02c.chunk.css",
-    "static/js/2.92ac3f10.chunk.js": "/Madad-Demo/static/js/2.92ac3f10.chunk.js",
-    "static/js/2.92ac3f10.chunk.js.map": "/Madad-Demo/static/js/2.92ac3f10.chunk.js.map",
+    "static/js/2.1ac34543.chunk.js": "/Madad-Demo/static/js/2.1ac34543.chunk.js",
+    "static/js/2.1ac34543.chunk.js.map": "/Madad-Demo/static/js/2.1ac34543.chunk.js.map",
     "index.html": "/Madad-Demo/index.html",
-    "precache-manifest.355c8f218deb64f7ab6f1e950be42dcd.js": "/Madad-Demo/precache-manifest.355c8f218deb64f7ab6f1e950be42dcd.js",
+    "precache-manifest.37b1eb33148b5c26d1afdb44ab2c2945.js": "/Madad-Demo/precache-manifest.37b1eb33148b5c26d1afdb44ab2c2945.js",
     "service-worker.js": "/Madad-Demo/service-worker.js",
     "static/css/2.4b36e02c.chunk.css.map": "/Madad-Demo/static/css/2.4b36e02c.chunk.css.map",
-    "static/css/main.c4bec777.chunk.css.map": "/Madad-Demo/static/css/main.c4bec777.chunk.css.map",
-    "static/js/2.92ac3f10.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.92ac3f10.chunk.js.LICENSE.txt",
-    "static/media/about.jpg": "/Madad-Demo/static/media/about.6c6c9d11.jpg",
+    "static/css/main.a5296e31.chunk.css.map": "/Madad-Demo/static/css/main.a5296e31.chunk.css.map",
+    "static/js/2.1ac34543.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.1ac34543.chunk.js.LICENSE.txt",
     "static/media/architect.svg": "/Madad-Demo/static/media/architect.0a0789d9.svg",
     "static/media/Homepage.module.css": "/Madad-Demo/static/media/back.7d946311.jpg",
     "static/media/banking.svg": "/Madad-Demo/static/media/banking.c9247515.svg",
@@ -35,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.28702acc.js",
     "static/css/2.4b36e02c.chunk.css",
-    "static/js/2.92ac3f10.chunk.js",
-    "static/css/main.c4bec777.chunk.css",
-    "static/js/main.9d882c7f.chunk.js"
+    "static/js/2.1ac34543.chunk.js",
+    "static/css/main.a5296e31.chunk.css",
+    "static/js/main.0a4e310d.chunk.js"
   ]
 }
