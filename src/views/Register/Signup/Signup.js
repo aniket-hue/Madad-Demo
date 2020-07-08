@@ -14,8 +14,8 @@ class Signup extends Component {
     }
     render() {
         return (
-            <div className="container-fluid p-0 m-0">
-                <div className="mb-5 mt-5 p-5 text-center"
+            <div className="container-fluid p-0">
+                <div className="mb-5 mt-5 p-5 "
                     style={{ background: "#ff5757" }}>
                     <h2 style={{
                         fontSize: "calc(2.16vw + 3rem)",
@@ -23,7 +23,7 @@ class Signup extends Component {
                         color: "white"
                     }}>Sign Up</h2>
                 </div>
-                <div className="row p-5 ">
+                <div className="row m-0 pr-5 pl-5">
                     <div className="col-xl-6 col-xs-12 col-md-6">
                         <Input
                             placeholder="Enter your name"
@@ -60,15 +60,17 @@ class Signup extends Component {
                             changed={this.changeHandle}
                         />
                     </div>
-                    <button
-                        type="button"
-                        className="p-3"
-                        style={{ background: "black", border: "0", color: "white", fontSize: "1rem" }}
-                    >
-                        Sign Up
+                    <div className="col-xl-12 col-xs-12 col-md-12">
+                        <button
+                            type="button"
+                            className="p-3"
+                            style={{ background: "black", border: "0", color: "white", fontSize: "1rem" }}
+                        >
+                            Sign Up
                     </button>
+                    </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }

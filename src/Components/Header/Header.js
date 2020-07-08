@@ -27,12 +27,10 @@ class Header extends Component {
                         <button onClick={() => (this.setState({ show: !this.state.show }))} class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div
-
-                            id="navbarSupportedContent" className={"collapse navbar-collapse justify-content-end mr-5 " + show}>
+                        <div id="navbarSupportedContent" className={"collapse navbar-collapse justify-content-end mr-5 " + show}>
                             <ul className="navbar-nav  ">
                                 <li className="nav-item ">
-                                    <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} className="nav-link text-black ml-5" to="/Madad-Demo">Home <span className="sr-only">(current)</span></Link>
+                                    <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} className="mt-5-xs nav-link text-black ml-5" to="/Madad-Demo">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
                                     <a style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">About Us</a>
@@ -41,7 +39,7 @@ class Header extends Component {
                                     <a style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">Contact Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <span style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">|</span>
+                                    <span style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5 hidden-sm-down">|</span>
                                 </li>
 
                                 <motion.li

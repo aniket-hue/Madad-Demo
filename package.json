@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
     "framer-motion": "^1.11.1",
