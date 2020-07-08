@@ -1,43 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b204efbf2a0cf0c9db343e9edbf92d3",
+    "revision": "0b0dd04775eeb4a2cab40d36b0951d19",
     "url": "/Madad-Demo/index.html"
   },
   {
-    "revision": "5a243da4e221f2f396cc",
+    "revision": "67b84965721fbdac643b",
     "url": "/Madad-Demo/static/css/2.4b36e02c.chunk.css"
   },
   {
-    "revision": "cafb81f46b9436b6eb45",
-    "url": "/Madad-Demo/static/css/main.e78ea7ce.chunk.css"
+    "revision": "e29019153f3a126ebcf0",
+    "url": "/Madad-Demo/static/css/main.a783a554.chunk.css"
   },
   {
-    "revision": "5a243da4e221f2f396cc",
-    "url": "/Madad-Demo/static/js/2.92ac3f10.chunk.js"
+    "revision": "67b84965721fbdac643b",
+    "url": "/Madad-Demo/static/js/2.fd1247a0.chunk.js"
   },
   {
-    "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Madad-Demo/static/js/2.92ac3f10.chunk.js.LICENSE.txt"
+    "revision": "2069192f75c6f3fb6247231eea52f248",
+    "url": "/Madad-Demo/static/js/2.fd1247a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cafb81f46b9436b6eb45",
-    "url": "/Madad-Demo/static/js/main.120851c2.chunk.js"
+    "revision": "e29019153f3a126ebcf0",
+    "url": "/Madad-Demo/static/js/main.52229f7a.chunk.js"
   },
   {
     "revision": "2467f6c0f226b73ca603",
     "url": "/Madad-Demo/static/js/runtime-main.28702acc.js"
   },
   {
-    "revision": "6c6c9d11935ccfe1c20ff05ab8a2287b",
-    "url": "/Madad-Demo/static/media/about.6c6c9d11.jpg"
-  },
-  {
     "revision": "0a0789d909f41e1f01d5ee95c6fb2183",
     "url": "/Madad-Demo/static/media/architect.0a0789d9.svg"
-  },
-  {
-    "revision": "7d946311621253854b656ba78939d392",
-    "url": "/Madad-Demo/static/media/back.7d946311.jpg"
   },
   {
     "revision": "c92475154d3b0486ce979acdf35bd6fc",
