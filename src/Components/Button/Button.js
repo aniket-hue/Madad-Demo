@@ -1,12 +1,14 @@
 import React from 'react'
 import classes from './Button.module.css'
-import { Animated } from "react-animated-css";
-
+import { motion } from 'framer-motion'
 const Button = (props) => {
     return (
-        <button type="button" onClick={props.clicked} className={`${classes.button} p-2`}>
+        <motion.button
+            whileHover={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            onClick={props.clicked} className={`${classes.button} p-2`}>
             {props.name}
-        </button>
+        </motion.button>
     )
 }
 

@@ -15,32 +15,32 @@ import consultancy from '../../assets/consultant.svg'
 
 export const data = [{
     heading: "NGO",
-    img: ngo,
+    img: "https://img.icons8.com/wired/64/000000/hospital-room.png",
     text: "If you have any complaints or if you want any help tell us!"
 },
 {
     heading: "Hospital",
-    img: hospital,
+    img: "https://img.icons8.com/ios-filled/100/000000/hospital-room--v2.png",
     text: "We will connect you with our best doctors"
 },
 {
     heading: "Depression",
-    img: depression,
+    img: "https://img.icons8.com/ios-filled/100/000000/under-pressure-male--v1.png",
     text: "We are here to help answer any questions you might have about mental health. "
 },
 {
     heading: "Electrician",
-    img: electrician,
+    img: "https://img.icons8.com/ios-filled/100/000000/plug.png",
     text: "Light up your life with just one click and leave rest up to us!"
 },
 {
     heading: "Cooking",
-    img: cooking,
+    img: "https://img.icons8.com/ios/100/000000/cooking-book.png",
     text: "Aspire to be a cook or want to eat some good food. But don't know how ?"
 },
 {
     heading: "Flights",
-    img: flights,
+    img: "https://img.icons8.com/ios/100/000000/in-air.png",
     text: "Tired of bad flights again and again? Click us and find flights with reasonable price"
 },
 // {

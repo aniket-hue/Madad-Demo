@@ -14,45 +14,60 @@ class Signup extends Component {
     }
     render() {
         return (
-            <div className="container pr-5 pl-5">
-                <div className="mb-5 mt-5 " >
-                    <h1 style={{fontSize:"4rem", color:"#305868"}}>Sign Up</h1>
+            <div className="container-fluid p-0 m-0">
+                <div className="mb-5 mt-5 p-5 text-center"
+                    style={{ background: "#ff5757" }}>
+                    <h2 style={{
+                        fontSize: "calc(2.16vw + 3rem)",
+                        fontWeight: "400",
+                        color: "white"
+                    }}>Sign Up</h2>
                 </div>
-                <Input
-                    placeholder="Enter your name"
-                    value={this.state.email}
-                    type="text"
-                    name="name"
-                    label="Name"
-                    changed={this.changeHandle}
-                />
-                <Input
-                    placeholder="Enter your email"
-                    value={this.state.email}
-                    type="text"
-                    name="email"
-                    label="Email"
-                    changed={this.changeHandle}
-                />
-                <Input
-                    placeholder="Enter your password"
-                    value={this.state.password}
-                    type="password"
-                    label="Password"
-                    name="password"
-                    changed={this.changeHandle}
-                />
-                <Input
-                    placeholder="Enter confirm password"
-                    value={this.state.password}
-                    type="password"
-                    label="Confirm Password"
-                    name="password"
-                    changed={this.changeHandle}
-                />
-                <button
-                    type="button"
-                    class="btn btn-outline-primary">Sign Up</button>
+                <div className="row p-5 ">
+                    <div className="col-xl-6 col-xs-12 col-md-6">
+                        <Input
+                            placeholder="Enter your name"
+                            value={this.state.email}
+                            type="text"
+                            name="name"
+                            label="Name"
+                            changed={this.changeHandle}
+                        />
+                        <Input
+                            placeholder="Enter your email"
+                            value={this.state.email}
+                            type="text"
+                            name="email"
+                            label="Email"
+                            changed={this.changeHandle}
+                        />
+                    </div>
+                    <div className="col-xl-6 col-xs-12 col-md-6">
+                        <Input
+                            placeholder="Enter your password"
+                            value={this.state.password}
+                            type="password"
+                            label="Password"
+                            name="password"
+                            changed={this.changeHandle}
+                        />
+                        <Input
+                            placeholder="Enter confirm password"
+                            value={this.state.password}
+                            type="password"
+                            label="Confirm Password"
+                            name="password"
+                            changed={this.changeHandle}
+                        />
+                    </div>
+                    <button
+                        type="button"
+                        className="p-3"
+                        style={{ background: "black", border: "0", color: "white", fontSize: "1rem" }}
+                    >
+                        Sign Up
+                    </button>
+                </div>
             </div>
         )
     }

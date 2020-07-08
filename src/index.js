@@ -14,6 +14,7 @@ class Root extends Component {
                     <Switch>
                         <Route exact path="/Madad-Demo" component={Homepage} />
                         <Route exact path="/Madad-Demo/login" component={Index} />
+                        <Route exact path="/Madad-Demo/signup" component={Index} />
                     </Switch>
             </BrowserRouter>
         )

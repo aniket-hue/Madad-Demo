@@ -3,7 +3,7 @@ import classes from './FormInput.module.css'
 const input = (props) => {
     return (
         <React.Fragment>
-            <div className="d-flex flex-column mb-5">
+            <div className="d-flex flex-column mb-5" style={{maxWidth:"20em"}}>
                 <label className={`mb-3 ${classes.label}`}>{props.label}</label>
                 <input
                     type={props.type}

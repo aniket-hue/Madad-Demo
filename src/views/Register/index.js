@@ -1,16 +1,19 @@
 import React from 'react'
 import Login from './Login/Login'
 import Signup from './Signup/Signup'
-const index = () => (
-    <div className="container-fluid">
-        <div className="row mb-5 mt-5">
-            <div className="col-sm-12 col-md-12 col-xl-6 col-lg-2">
-                <Login />
-            </div>
-            <div className="col-sm-12 col-md-12 col-xl-6 col-lg-2">
+import Footer from '../../Components/Footer/Footer'
+import { withRouter } from 'react-router'
+const index = (props) => {
+    console.log(props)
+    return (<React.Fragment>
+        <div className="container-fluid p-0"
+            style={{ margin: 0 }}>
+            {props.match.path === '/Madad-Demo/login' ?
+                <Login /> :
                 <Signup />
-            </div>
+            }
         </div>
-    </div>
-)
-export default index;
+        <Footer />
+    </React.Fragment>)
+}
+export default withRouter(index);

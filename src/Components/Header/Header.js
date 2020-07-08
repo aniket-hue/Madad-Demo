@@ -1,35 +1,37 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.jpeg'
+import { motion } from 'framer-motion'
+import classes from "./Header.module.css";
 class Header extends Component {
     state = {
         show: false,
         currentScrollHeight: 100,
     }
     componentDidMount() {
-        window.onscroll = () => {
-            const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-            if (this.state.currentScrollHeight != newScrollHeight) {
-                this.setState({ currentScrollHeight: newScrollHeight })
-            }
-        }
+
     }
     render() {
-        const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
         const show = (this.state.show) ? "show" : "";
         return (
-            <div className="page-main-header">
-                <nav className='navbar navbar-expand-lg navbar-light bg-white fixed-top' style={{ background: "", opacity: opacity }}>
-                    <div className="container-fluid">
-                        <div className="logo-wrapper text-right navbar-brand " >
-                            <img style={{ width: "100%", maxHeight: "70px" }} src={logo} />
-                        </div>
+            <div className="page-main-header" style={{ zIndex: "1000", }} >
+                <motion.nav
+                    className='navbar navbar-expand-lg navbar-light bg-white fixed-top'
+                >
+                    <div className="container-fluid" style={{ opacity: "1" }}>
+                        <Link to="/Madad-Demo">
+                            <div className="logo-wrapper text-right navbar-brand p-2" style={{ cursor: "pointer", border: "5px solid black" }} >
+                                <h1 style={{ fontSize: "1.5", opacity: "1", fontWeight: "700" }}>Madad</h1>
+                            </div>
+                        </Link>
                         <button onClick={() => (this.setState({ show: !this.state.show }))} class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div id="navbarSupportedContent"  className={"collapse navbar-collapse justify-content-end mr-5 " + show}>
+                        <div
+
+                            id="navbarSupportedContent" className={"collapse navbar-collapse justify-content-end mr-5 " + show}>
                             <ul className="navbar-nav  ">
-                                <li className="nav-item active">
+                                <li className="nav-item ">
                                     <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} className="nav-link text-black ml-5" to="/Madad-Demo">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
@@ -42,13 +44,16 @@ class Header extends Component {
                                     <span style={{ fontFamily: "Raleway", fontWeight: "700" }} href="#" className="nav-link text-black ml-5">|</span>
                                 </li>
 
-                                <li className="nav-item">
-                                    <Link style={{ fontFamily: "Raleway", fontWeight: "700", color: "#c7c5c6" }} to="/Madad-Demo/login" className="nav-link ml-5">Log In</Link>
-                                </li>
+                                <motion.li
+                                    whileHover={{ borderRadius: "20px" }}
+                                    className={`nav-item d-flex pl-3 pr-3 ml-5 ${classes.links}`} type="button">
+                                    <Link style={{ fontFamily: "Raleway", fontWeight: "700", color: "white" }} to="/Madad-Demo/login" className="nav-link">Log In</Link>
+                                </motion.li>
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </motion.nav>
+                <div className="mt-5 pt-5"></div>
             </div >
         );
     }
