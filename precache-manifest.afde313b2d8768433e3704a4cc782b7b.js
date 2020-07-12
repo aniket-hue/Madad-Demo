@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1cb38d230e52dedad4999584dddec595",
+    "revision": "ba7058be9026b5325b3a1e4218e2c8be",
     "url": "/Madad-Demo/index.html"
   },
   {
-    "revision": "0c6de2e1e2f880015ac4",
-    "url": "/Madad-Demo/static/css/2.4b36e02c.chunk.css"
+    "revision": "2d67b849072747ef6445",
+    "url": "/Madad-Demo/static/css/2.0c8fc136.chunk.css"
   },
   {
-    "revision": "f282cb295064dff0510f",
-    "url": "/Madad-Demo/static/css/main.a783a554.chunk.css"
+    "revision": "92bff1be403ec9c6260c",
+    "url": "/Madad-Demo/static/css/main.4c4746ef.chunk.css"
   },
   {
-    "revision": "0c6de2e1e2f880015ac4",
-    "url": "/Madad-Demo/static/js/2.ff6878b2.chunk.js"
+    "revision": "2d67b849072747ef6445",
+    "url": "/Madad-Demo/static/js/2.e2882d24.chunk.js"
   },
   {
     "revision": "2069192f75c6f3fb6247231eea52f248",
-    "url": "/Madad-Demo/static/js/2.ff6878b2.chunk.js.LICENSE.txt"
+    "url": "/Madad-Demo/static/js/2.e2882d24.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f282cb295064dff0510f",
-    "url": "/Madad-Demo/static/js/main.48edf369.chunk.js"
+    "revision": "92bff1be403ec9c6260c",
+    "url": "/Madad-Demo/static/js/main.fe789317.chunk.js"
   },
   {
     "revision": "2467f6c0f226b73ca603",
@@ -70,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "743aca9c055350d42d6d5044c92b70d0",
     "url": "/Madad-Demo/static/media/hospital.743aca9c.svg"
-  },
-  {
-    "revision": "5a5ea360e4b80d3edeef09d6821e433d",
-    "url": "/Madad-Demo/static/media/logo.5a5ea360.jpeg"
   },
   {
     "revision": "ba675f12dd978cbb9d69a054e9f7cfb4",

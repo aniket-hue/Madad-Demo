@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Madad-Demo/static/css/main.a783a554.chunk.css",
-    "main.js": "/Madad-Demo/static/js/main.48edf369.chunk.js",
-    "main.js.map": "/Madad-Demo/static/js/main.48edf369.chunk.js.map",
+    "main.css": "/Madad-Demo/static/css/main.4c4746ef.chunk.css",
+    "main.js": "/Madad-Demo/static/js/main.fe789317.chunk.js",
+    "main.js.map": "/Madad-Demo/static/js/main.fe789317.chunk.js.map",
     "runtime-main.js": "/Madad-Demo/static/js/runtime-main.28702acc.js",
     "runtime-main.js.map": "/Madad-Demo/static/js/runtime-main.28702acc.js.map",
-    "static/css/2.4b36e02c.chunk.css": "/Madad-Demo/static/css/2.4b36e02c.chunk.css",
-    "static/js/2.ff6878b2.chunk.js": "/Madad-Demo/static/js/2.ff6878b2.chunk.js",
-    "static/js/2.ff6878b2.chunk.js.map": "/Madad-Demo/static/js/2.ff6878b2.chunk.js.map",
+    "static/css/2.0c8fc136.chunk.css": "/Madad-Demo/static/css/2.0c8fc136.chunk.css",
+    "static/js/2.e2882d24.chunk.js": "/Madad-Demo/static/js/2.e2882d24.chunk.js",
+    "static/js/2.e2882d24.chunk.js.map": "/Madad-Demo/static/js/2.e2882d24.chunk.js.map",
     "index.html": "/Madad-Demo/index.html",
-    "precache-manifest.920e935f556bf38e0a7fbd7516ca295a.js": "/Madad-Demo/precache-manifest.920e935f556bf38e0a7fbd7516ca295a.js",
+    "precache-manifest.afde313b2d8768433e3704a4cc782b7b.js": "/Madad-Demo/precache-manifest.afde313b2d8768433e3704a4cc782b7b.js",
     "service-worker.js": "/Madad-Demo/service-worker.js",
-    "static/css/2.4b36e02c.chunk.css.map": "/Madad-Demo/static/css/2.4b36e02c.chunk.css.map",
-    "static/css/main.a783a554.chunk.css.map": "/Madad-Demo/static/css/main.a783a554.chunk.css.map",
-    "static/js/2.ff6878b2.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.ff6878b2.chunk.js.LICENSE.txt",
+    "static/css/2.0c8fc136.chunk.css.map": "/Madad-Demo/static/css/2.0c8fc136.chunk.css.map",
+    "static/css/main.4c4746ef.chunk.css.map": "/Madad-Demo/static/css/main.4c4746ef.chunk.css.map",
+    "static/js/2.e2882d24.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.e2882d24.chunk.js.LICENSE.txt",
     "static/media/architect.svg": "/Madad-Demo/static/media/architect.0a0789d9.svg",
     "static/media/banking.svg": "/Madad-Demo/static/media/banking.c9247515.svg",
     "static/media/consultant.svg": "/Madad-Demo/static/media/consultant.3c9fa23b.svg",
@@ -25,16 +25,15 @@
     "static/media/harsh.jpg": "/Madad-Demo/static/media/harsh.bb97157a.jpg",
     "static/media/help.svg": "/Madad-Demo/static/media/help.7dd582bd.svg",
     "static/media/hospital.svg": "/Madad-Demo/static/media/hospital.743aca9c.svg",
-    "static/media/logo.jpeg": "/Madad-Demo/static/media/logo.5a5ea360.jpeg",
     "static/media/medicine.svg": "/Madad-Demo/static/media/medicine.ba675f12.svg",
     "static/media/ngo.svg": "/Madad-Demo/static/media/ngo.7fde0286.svg",
     "static/media/trial.svg": "/Madad-Demo/static/media/trial.751daeec.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.28702acc.js",
-    "static/css/2.4b36e02c.chunk.css",
-    "static/js/2.ff6878b2.chunk.js",
-    "static/css/main.a783a554.chunk.css",
-    "static/js/main.48edf369.chunk.js"
+    "static/css/2.0c8fc136.chunk.css",
+    "static/js/2.e2882d24.chunk.js",
+    "static/css/main.4c4746ef.chunk.css",
+    "static/js/main.fe789317.chunk.js"
   ]
 }
