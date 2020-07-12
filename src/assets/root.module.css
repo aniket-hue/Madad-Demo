@@ -1,0 +1,37 @@
+.container_first_image_homepage{
+    background: url("https://cdn.pixabay.com/photo/2019/10/01/13/58/coffee-4518354_960_720.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.read_more_services_homepage{
+    border: 1px solid inherit;
+    background: black;
+}
+
+.our_team_about_us_heading{
+    border: 5px solid black;
+}
+.custom_button{
+    background: black;
+    color: white;
+    font-family: "Raleway";
+    border: 0;
+    transition: .3s linear;
+}
+.custom_button:hover{
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.custom_label{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.custom_input{
+    border: 1px solid black;
+    padding: 10px;
+}
+

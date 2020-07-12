@@ -16,7 +16,13 @@
     color: black;
 }
 
-
 .links{
     background: #ff5757;
+}
+
+.link_bottom{
+    border:0
+}
+.link_bottom:hover{
+    border-bottom:"5px solid black"
 }

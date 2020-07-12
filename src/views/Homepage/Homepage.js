@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import classes from './Homepage.module.css'
+import classes from '../../assets/root.module.css'
 import { Row } from 'reactstrap'
 import Button from '../../Components/Button/Button'
 import AOS from 'aos'
@@ -7,7 +7,6 @@ import { data, data2 } from './data'
 import 'aos/dist/aos.css';
 import help from '../../assets/help.svg'
 import Footer from '../../Components/Footer/Footer';
-import Harsh from '../../assets/harsh.jpg'
 import { motion } from 'framer-motion';
 class Homepage extends Component {
     state = {
@@ -19,41 +18,36 @@ class Homepage extends Component {
         })
     }
     render() {
-
         const items =
             data.map((data, index) =>
                 (index >= 3 ?
-
-                    <motion.div
-                        initial={{ rotateY: 0 }}
-                        whileHover={{
-                            rotateZ: -3,
-                        }}
-                        data-aos="fade-in" className="col-md-4 col-sm-6 col-xs-6 mb-5" >
+                    <div
+                        style={{ display: this.state.show ? "" : "none" }}
+                        data-aos="fade-in" className="col-md-4 col-sm-12 col-xs-12 mb-5" >
                         <motion.div className="w-25 h-50 d-inline-block mb-4">
                             <img width="100%" src={data.img} />
                         </motion.div>
                         <h3 style={{ fontFamily: "Raleway" }}>{data.heading}</h3>
                         <p style={{ fontFamily: "Raleway" }}>{data.text}</p>
-                    </motion.div>
+                    </div>
                     : null)
             )
         return (
             <React.Fragment>
                 {<div style={{ width: "100%" }}
-                    className={`${classes.container} 
+                    className={`${classes.container_first_image_homepage} 
                     container-fluid text-center`}>
                     <motion.div
                         initial={{ y: "-100vw" }}
                         animate={{ y: 0 }}
-                        transition={{type:"tween"}}
+                        transition={{ type: "tween" }}
                         className="d-inline-block  ml-5 mt-5">
                         <h1
                             style={{
                                 fontSize: "5rem",
                                 color: "black",
                                 fontFamily: 'Rajdhani sans-serif'
-                            }}>आ: म: नभर भारत</h1>
+                            }}>आत्म निर्भर</h1>
                         <h5
                             className="text-black"
                             style={{ textShadow: "1px 1px gray" }}>
@@ -82,20 +76,20 @@ class Homepage extends Component {
                         </div>
                     </Row>
                 </div>
-                <div className="container-fluid p-1" style={{ background: "#ff5757" }}>
-                    <div className="d-flex justify-content-between m-5 flex-wrap" >
+                <div className="container-fluid" style={{ background: "#ff5757" }}>
+                    <div className="row p-5 text-center">
                         {data2.map(data => (
-                            <div data-aos="fade-up" className="text-center mb-5" >
-                                <div className="w-25 h-50 d-inline-block mb-4" >
-                                    <img width="100%" src={data.img} />
+                            <div data-aos="fade-up" className="col-xs-12 col-md-4" >
+                                <div className="d-inline-block mb-4 " >
+                                    <img width="100em" src={data.img} />
                                 </div>
                                 <div>
                                     <h3 style={{ fontFamily: "Raleway" }}>{data.heading}</h3>
-                                </div>
-                                <br />
-                                <div>
+                                    <br />
                                     <p className="text-white">{data.text}</p>
                                 </div>
+
+
                             </div>
                         ))
                         }
@@ -121,46 +115,19 @@ class Homepage extends Component {
                         )
                         }
                     </div>
-                    {this.state.show && <div className="row">
+                    <motion.div
+                        className="row"
+                        initial={{ height: this.state.show ? "0" : "100%" }}
+                        animate={{ height: this.state.show ? "100%" : "0" }}
+                        transition={{ type: "spring" }}
+                    >
                         {items}
-                    </div>}
-                    <Button name={this.state.show ? "Show Less" : "Show More"} clicked={() => (this.setState({ show: !this.state.show }))} />
+                    </motion.div>
+                    <Button
+                        name={this.state.show ? "Show Less" : "Show More"} clicked={() => (this.setState({ show: !this.state.show }))} />
+                    <div></div>
                 </div>
-                {/* <div className="container h-100">
-                    <h2
-                        className={`text-black ${classes.our_team}  mb-5 p-2`}
-                        style={{ fontWeight: "700", fontSize: "3rem", fontFamily: "Raleway", color: "#ff7876" }}>
-                        Our Team
-                    </h2>
-                    <Row>
-                        <div className="col">
-                            <img className="w-75" src={Harsh} width="100%" />
-                        </div>
-                        <div className="col">
-                            <span style={{ fontFamily: "Raleway" }}>
-                                “MADAD – INDIA helping INDIA” was founded by Harsh Saxena.
-                                A simple middle-class person who always dreamt of being the first
-                                and best mover in the business that should impact everybody’s life,
-                                but in real life, it seems difficult because in the family of engineers
-                                and government servants, he wanted to do business but like every
-                                typical middle-class family they asked him to focus on study and
-                                job.However, he made some decisions that quite justified above are
-                                written statements; at least for him like in the family of Engineer he
-                                chooses to do a management degree from Guru Gobind Singh Inderprastha University,
-                                Delhi (although he was an average student) then he started from customer care
-                                executive to Data analyst in E-commerce giant while he was doing good at his job on
-                                one D-day he again took a decision that gives his whole family a bomb blast situation,
-                                however he was determined so his family ended up supporting him however like every
-                                other entrepreneur he was not having any idea what will he do but he was sure he will
-                                do something.So his friend “Madad” him by guiding and motivating him to start his
-                                entrepreneurial journey by Paper cup manufacturing business then RO water
-                                distribution business. Everything was going well, but he was missing one thing in his
-                                life, i.e. To be the first &amp; best mover and a unique idea.<br /><br />
-                                <span style={{ fontWeight: "700" }}>CEO & Founder - Harsh Saxena</span>
-                            </span>
-                        </div>
-                    </Row>
-                </div> */}
+                
                 <Footer />
                 {/* <Slider /> */}
 

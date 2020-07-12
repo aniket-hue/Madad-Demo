@@ -6,12 +6,24 @@ class Signup extends Component {
         email: '',
         password: '',
         confirmPassword: '',
-        name: '',
+        firstName: '',
+        middleName: '',
+        lastName: '',
+        phone: '',
+        category: '',
+        academicProof: '',
+        Skills: '',
+        expertise: '',
+        areaOfInterest: '',
+        idProof: '',
+        addressProof: '',
+        address: ''
     }
 
     changeHandle = (event) => {
-        this.state({ [event.target.name]: event.target.value })
+        this.setState({ [event.target.name]: event.target.value })
     }
+
     render() {
         return (
             <div className="container-fluid p-0">
@@ -21,17 +33,19 @@ class Signup extends Component {
                         fontSize: "calc(2.16vw + 3rem)",
                         fontWeight: "400",
                         color: "white"
-                    }}>Sign Up</h2>
+                    }}>
+                        Sign Up
+                    </h2>
                 </div>
                 <div className="row m-0 pr-5 pl-5">
                     <div className="col-xl-6 col-xs-12 col-md-6">
                         <Input
                             placeholder="Enter your name"
-                            value={this.state.email}
+                            value={this.state.name}
                             type="text"
                             name="name"
                             label="Name"
-                            changed={this.changeHandle}
+                            change={this.changeHandle}
                         />
                         <Input
                             placeholder="Enter your email"
@@ -39,7 +53,7 @@ class Signup extends Component {
                             type="text"
                             name="email"
                             label="Email"
-                            changed={this.changeHandle}
+                            change={this.changeHandle}
                         />
                     </div>
                     <div className="col-xl-6 col-xs-12 col-md-6">
@@ -49,15 +63,121 @@ class Signup extends Component {
                             type="password"
                             label="Password"
                             name="password"
-                            changed={this.changeHandle}
+                            change={this.changeHandle}
                         />
                         <Input
                             placeholder="Enter confirm password"
-                            value={this.state.password}
+                            value={this.state.confirmPassword}
                             type="password"
                             label="Confirm Password"
-                            name="password"
-                            changed={this.changeHandle}
+                            name="confirmPassword"
+                            change={this.changeHandle}
+                        />
+                    </div>
+                    <div className="col-xl-6 col-xs-12 col-md-6">
+                        <Input
+                            placeholder="Middle Name"
+                            value={this.state.middleName}
+                            type="text"
+                            label="Middle Name"
+                            name="middleName"
+                            change={this.changeHandle}
+                        />
+                        <Input
+                            placeholder="Last Name"
+                            value={this.state.lastName}
+                            type="text"
+                            label="Last Name"
+                            name="lastName"
+                            change={this.changeHandle}
+                        />
+                    </div>
+                    <div className="col-xl-6 col-xs-12 col-md-6">
+                        <Input
+                            placeholder="Address"
+                            value={this.state.address}
+                            type="text"
+                            label="Address"
+                            name="address"
+                            change={this.changeHandle}
+                        />
+                        <div>
+                            <label
+                                style={{
+                                    fontWeight: "200",
+                                    fontSize: "1.5rem",
+                                    fontFamily: "Raleway"
+                                }}
+                                className="mb-3"
+                            >ID proof</label>
+                            <div className="row pl-3">
+                                <div className="col-xs-12">
+                                    <input
+                                        style={{
+                                            border: "1px solid black",
+                                            padding: "10px",
+                                            fontFamily: "Raleway"
+                                        }}
+                                        type="text"
+                                        placeholder="ID No."
+                                        value={this.state.idProof}
+                                        onChange={this.changeHandle}
+                                        name="idProof"
+                                    />
+                                </div>
+                                <div className="col-xs-12 mt-2 ml-2">
+                                    <select
+                                        defaultValue="Type"
+                                        className=""
+                                        style={{
+                                            border: "1px solid black",
+                                            background: "white",
+                                            maxWidth: "6em"
+                                        }}
+                                    >
+                                        <option>PAN Card</option>
+                                        <option>Driving Licence</option>
+                                        <option>Adhaar Card</option>
+                                        <option>Voter ID</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 col-xs-12 col-md-6">
+                        <Input
+                            placeholder="Category"
+                            value={this.state.category}
+                            type="text"
+                            label="Wingman Category"
+                            name="category"
+                            change={this.changeHandle}
+                        />
+                        <Input
+                            placeholder="Your Skills"
+                            value={this.state.Skills}
+                            type="text"
+                            label="Skills"
+                            name="Skills"
+                            change={this.changeHandle}
+                        />
+                    </div>
+                    <div className="col-xl-6 col-xs-12 col-md-6">
+                        <Input
+                            placeholder="Your Interest"
+                            value={this.state.areaOfInterest}
+                            type="text"
+                            label="Area Of Interest"
+                            name="areaOfInterest"
+                            change={this.changeHandle}
+                        />
+                        <Input
+                            placeholder="Academic Proof"
+                            value={this.state.academicProof}
+                            type="text"
+                            label="Academic Proof"
+                            name="academicProof"
+                            change={this.changeHandle}
                         />
                     </div>
                     <div className="col-xl-12 col-xs-12 col-md-12">
