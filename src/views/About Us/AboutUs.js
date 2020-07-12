@@ -14,10 +14,10 @@ class AboutUs extends React.Component {
                         Our Team
                     </h2>
                     <Row>
-                        <div className="col">
+                        <div className="col-xs-12 col-md-6 mb-5">
                             <img className="w-75" src={Harsh} width="100%" />
                         </div>
-                        <div className="col">
+                        <div className="col-xs-12 col-md-6">
                             <span style={{ fontFamily: "Raleway" }}>
                                 “MADAD – INDIA helping INDIA” was founded by Harsh Saxena.
                                 A simple middle-class person who always dreamt of being the first
