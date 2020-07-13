@@ -6,22 +6,22 @@ class Contact extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container-fluid mb-5">
+                <div className="container-fluid mt-5" style={{ height:"40vw"}}>
                     <div style={{ textAlign: "center" }}>
                         <span style={{ color: "#353535", fontWeight: "700", fontSize: "10vw" }}>hello!</span>
                     </div>
                     <div className="container">
-                        <div className="row">
+                        <div className="container">
                             <span
                                 style={{ fontFamily: "Raleway" }}
                             >
-                                Give us a call at 888-248-0632. Calling is best for urgent issues that need immediate attention—our phone
+                                Give us a call at <span style={{fontWeight:"700", background:"black", color:"white", padding:"1px"}}>+91-8010-101-010</span>. Calling is best for urgent issues that need immediate attention—our phone
                                 lines are open from 6 am to 4 pm PT (9 am to 7 pm ET) on business days,
                                 and from 7 am to 2 pm PT (10 am to 5 pm ET) on Saturdays.
                                 Our phone lines are closed on holidays and Sundays.
                             </span>
                         </div>
-                        <div className="container mb-5">
+                        <div className="container">
                             <div className="d-inline-flex justify-content-between mt-5">
                                 <a href="https://www.instagram.com/callmadad" target="__blank">
                                     <FA
@@ -52,9 +52,7 @@ class Contact extends Component {
                                     />
                                 </a>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
                 <Footer />

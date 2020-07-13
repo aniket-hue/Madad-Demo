@@ -9,6 +9,7 @@ import Index from './views/Register';
 import AboutUs from './views/About Us/AboutUs';
 import Contact from './views/Contact Us/Contactus';
 import Service from './views/Service/Service';
+import Whowe from './views/WhoWeAre/whowe'
 class Root extends Component {
     render() {
         return (
@@ -21,6 +22,7 @@ class Root extends Component {
                         <Route exact path="/Madad-Demo/about" component={AboutUs} />
                         <Route exact path="/Madad-Demo/contact" component={Contact} />
                         <Route exact path="/Madad-Demo/service" component={Service} />
+                        <Route exact path="/Madad-Demo/whoweare" component={Whowe} />
                     </Switch>
             </BrowserRouter>
         )

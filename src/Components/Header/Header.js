@@ -15,7 +15,7 @@ class Header extends Component {
             color: "white",
             fontSize: "1rem",
             fontFamily: "Raleway",
-            fontWeight:"700"
+            fontWeight: "700"
         }
         const show = (this.state.show) ? "show" : "";
         return (
@@ -37,8 +37,8 @@ class Header extends Component {
                     >
                         <div className="container-fluid" style={{ opacity: "1" }}>
                             <Link to="/Madad-Demo">
-                                <div className="logo-wrapper text-right navbar-brand p-2" style={{ cursor: "pointer", border: "5px solid black" }} >
-                                    <h1 style={{ fontSize: "1.5", opacity: "1", fontWeight: "700" }}>Madad</h1>
+                                <div className="logo-wrapper text-right navbar-brand p-2" style={{ cursor: "pointer" }} >
+                                    <h1 style={{ fontSize: "3rem", opacity: "1", fontWeight: "700", color:"#000000", fontFamily: "Comfortaa, cursive" }}>Madad</h1>
                                 </div>
                             </Link>
                             <button onClick={() => (this.setState({ show: !this.state.show }))} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,9 +47,9 @@ class Header extends Component {
                             <div
                                 id="navbarSupportedContent" className={"collapse navbar-collapse justify-content-end mr-5 " + show}>
                                 <ul className="navbar-nav  ">
-                                    <li className="nav-item ">
-                                        <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} className={`mt-5-xs nav-link text-black ml-5 ${classes.link_bottom}`} to="/Madad-Demo">
-                                            Home
+                                    <li className={`nav-item ${classes.link_bottom}`}>
+                                        <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} className={`mt-5-xs nav-link text-black ml-5 `} to="/Madad-Demo">
+                                            <span>Home</span>
                                         </Link>
                                     </li>
                                     <li className="nav-item ">
@@ -57,6 +57,9 @@ class Header extends Component {
                                     </li>
                                     <li className="nav-item">
                                         <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} to="/Madad-Demo/about" className="nav-link text-black ml-5">About Us</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} to="/Madad-Demo/whoweare" className="nav-link text-black ml-5">Who We Are</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link style={{ fontFamily: "Raleway", fontWeight: "700" }} to="/Madad-Demo/contact" className="nav-link text-black ml-5">Contact Us</Link>

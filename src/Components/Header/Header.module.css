@@ -1,17 +1,3 @@
-.logo_box{
-    transition: .3s linear;
-}
-.logo_box:hover{
-    background: #1b1b1c;
-}
-
-.logo_box:hover>span{
-    color: white;
-}
-.logo{
-    transition: .3s linear;
-}
-
 .text{
     color: black;
 }
@@ -21,8 +7,5 @@
 }
 
 .link_bottom{
-    border:0
-}
-.link_bottom:hover{
-    border-bottom:"5px solid black"
+    border:0;
 }

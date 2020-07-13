@@ -1,44 +1,54 @@
 import React from 'react'
-import Harsh from '../../assets/harsh.jpg';
 import classes from '../../assets/root.module.css'
 import { Row } from 'reactstrap';
 import Footer from '../../Components/Footer/Footer'
+import { motion } from 'framer-motion';
 class AboutUs extends React.Component {
     render() {
+        const style = {
+            lineHeight:"1.5"
+        }
         return (
             <React.Fragment>
                 <div className="container h-100 mt-5">
-                    <h2
-                        className={`text-black ${classes.our_team_about_us_heading}  mb-5 p-2`}
-                        style={{ fontWeight: "700", fontSize: "3rem", fontFamily: "Raleway", color: "#ff7876" }}>
-                        Our Team
-                    </h2>
+                    <motion.h2
+                        initial={{scale:0}}
+                        animate={{scale:1}}
+                        className={`text-black text-center mb-5 p-2`}
+                        style={{ fontWeight: "400", fontSize: "4rem", fontFamily: "Raleway" }}>
+                        How we Started!
+                    </motion.h2>
                     <Row>
-                        <div className="col-xs-12 col-md-6 mb-5">
-                            <img className="w-75" src={Harsh} width="100%" />
-                        </div>
-                        <div className="col-xs-12 col-md-6">
-                            <span style={{ fontFamily: "Raleway" }}>
-                                “MADAD – INDIA helping INDIA” was founded by Harsh Saxena.
-                                A simple middle-class person who always dreamt of being the first
-                                and best mover in the business that should impact everybody’s life,
-                                but in real life, it seems difficult because in the family of engineers
-                                and government servants, he wanted to do business but like every
-                                typical middle-class family they asked him to focus on study and
-                                job.However, he made some decisions that quite justified above are
-                                written statements; at least for him like in the family of Engineer he
-                                chooses to do a management degree from Guru Gobind Singh Inderprastha University,
-                                Delhi (although he was an average student) then he started from customer care
-                                executive to Data analyst in E-commerce giant while he was doing good at his job on
-                                one D-day he again took a decision that gives his whole family a bomb blast situation,
-                                however he was determined so his family ended up supporting him however like every
-                                other entrepreneur he was not having any idea what will he do but he was sure he will
-                                do something.So his friend “Madad” him by guiding and motivating him to start his
-                                entrepreneurial journey by Paper cup manufacturing business then RO water
-                                distribution business. Everything was going well, but he was missing one thing in his
-                                life, i.e. To be the first &amp; best mover and a unique idea.<br /><br />
-                                <span style={{ fontWeight: "700" }}>CEO & Founder - Harsh Saxena</span>
-                            </span>
+                        <div className="container mt-3">
+                            <div className="text-center mb-5">
+                                <h2 style={{fontFamily:"Raleway"}}>
+                                    <pre>
+                                        Turned Pandemic into Opportunity.<br/>
+                                        Time has changed, things has changed
+                                        SO AS WE
+                                    </pre>
+                                </h2>
+                            </div>
+                            <div className="container">
+                                <p style={{lineHeight:"1.9", fontFamily:"Raleway"}}>
+                                    The story began when the Covid-19 Pandemic hit our world when the world was facing recession and inflation,
+                                    People became jobless even after having the skills, degree, and everything. People were going through mental trauma and serious depression, but there was no one who can help them.
+                                    The same tragedy hit our Founder {`&`} CEO, Mr. Harsh Saxena, as well because his business went down, and he had to move to his hometown. He was surviving only on his savings.
+                                    One fine day when our Founder was thinking about the current situation, he thought that he has friends and family support,
+                                    but what about them who don’t have anyone for help.
+                                    He thought there should be a service that could help people with any type of problem from day-to-day chores to technical and financial help to their mental health.
+                                    After that, he shared this IDEA with his friend, who also believed that this was the need of the hour, and then he decided to build WORLD’S FIRST MADE IN INDIA – HELPLINE FOR EVERY SINGLE MATTER with a motto that no matter is small.. just talk!!!
+                                </p>
+                            </div>
+                            <div className="container mt-3">
+                                <h3 style={{fontFamily:"Raleway"}}>Why named MADAD and slogan INDIA Helping INDIA?</h3>
+                                <p style={{lineHeight:"1.9", fontFamily:"Raleway"}}>
+                                    The story behind the title <em><strong> “MADAD- INDIA helping INDIA” </strong></em><br/>
+                                    Because there could not be a more perfect name and slogan that could suit our nature of business.<br/><br/>
+                                    Our platform lets the people of INDIA help each other and make a great nation together however our Founder took MADAD (help) from her fiancée.
+                                    She, after considering the nature and motive behind the business, suggested this title.
+                                </p>
+                            </div>
                         </div>
                     </Row>
                 </div>
