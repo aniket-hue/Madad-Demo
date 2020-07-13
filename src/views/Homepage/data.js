@@ -14,65 +14,50 @@ import Harsh from '../../assets/harsh.jpg'
 import consultancy from '../../assets/consultant.svg'
 
 export const data = [{
-    heading: "NGO",
-    img: "https://img.icons8.com/wired/64/000000/hospital-room.png",
-    text: "If you have any complaints or if you want any help tell us!"
+	heading: "NGO",
+	img: "https://img.icons8.com/wired/64/000000/hospital-room.png",
+	text: "If you have any complaints or if you want any help tell us!"
 },
 {
-    heading: "Hospital",
-    img: "https://img.icons8.com/ios-filled/100/000000/hospital-room--v2.png",
-    text: "We will connect you with our best doctors"
+	heading: "Hospital",
+	img: "https://img.icons8.com/ios-filled/100/000000/hospital-room--v2.png",
+	text: "We will connect you with our best doctors"
 },
 {
-    heading: "Depression",
-    img: "https://img.icons8.com/ios-filled/100/000000/under-pressure-male--v1.png",
-    text: "We are here to help answer any questions you might have about mental health. "
+	heading: "Depression",
+	img: "https://img.icons8.com/ios-filled/100/000000/under-pressure-male--v1.png",
+	text: "We are here to help answer any questions you might have about mental health. "
 },
 {
-    heading: "Electrician",
-    img: "https://img.icons8.com/ios-filled/100/000000/plug.png",
-    text: "Light up your life with just one click and leave rest up to us!"
+	heading: "Electrician",
+	img: "https://img.icons8.com/ios-filled/100/000000/plug.png",
+	text: "Light up your life with just one click and leave rest up to us!"
 },
 {
-    heading: "Cooking",
-    img: "https://img.icons8.com/ios/100/000000/cooking-book.png",
-    text: "Aspire to be a cook or want to eat some good food. But don't know how ?"
+	heading: "Cooking",
+	img: "https://img.icons8.com/ios/100/000000/cooking-book.png",
+	text: "Aspire to be a cook or want to eat some good food. But don't know how ?"
 },
 {
-    heading: "Flights",
-    img: "https://img.icons8.com/ios/100/000000/in-air.png",
-    text: "Tired of bad flights again and again? Click us and find flights with reasonable price"
+	heading: "Flights",
+	img: "https://img.icons8.com/ios/100/000000/in-air.png",
+	text: "Tired of bad flights again and again? Click us and find flights with reasonable price"
 },
-// {
-//     heading: "Banking",
-//     img: banking,
-//     text: "We can even you with your money and start investing with just one click"
-// },
-// {
-//     heading: "Architect",
-//     img: architect,
-//     text: "New place ? or renovation ? Click Here! "
-// },
-// {
-//     heading: "Medicine",
-//     img: medicine,
-//     text: "Tired of finding medicines around you? Tell us we will find for you"
-// },
 ]
 
 export const data2 = [{
-    img: experts,
-    heading: "Experts",
-    text: "We will provide you experts for your problems"
+	img: experts,
+	heading: "Experts",
+	text: "We will provide you experts for your problems"
 
 },
 {
-    img: consultancy,
-    heading: "Consultants",
-    text: "You have an idea? You can consult with us"
+	img: consultancy,
+	heading: "Consultants",
+	text: "You have an idea? You can consult with us"
 },
 {
-    img: trial,
-    heading: "30 Day Free Trial",
-    text: "Just test us.. We will not charge you"
+	img: trial,
+	heading: "30 Day Free Trial",
+	text: "Just test us.. We will not charge you"
 }]

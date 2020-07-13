@@ -7,8 +7,6 @@ class whowe extends Component {
             color: "black",
             fontSize: "5rem",
             fontFamily: "Raleway",
-            lineHeight: "1.5",
-            letterSpacing:"1px"
         }
         return (
             <>

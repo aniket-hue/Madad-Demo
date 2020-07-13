@@ -11,25 +11,25 @@ import Contact from './views/Contact Us/Contactus';
 import Service from './views/Service/Service';
 import Whowe from './views/WhoWeAre/whowe'
 class Root extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                    <Header />
-                    <Switch>
-                        <Route exact path="/Madad-Demo" component={Homepage} />
-                        <Route exact path="/Madad-Demo/login" component={Index} />
-                        <Route exact path="/Madad-Demo/signup" component={Index} />
-                        <Route exact path="/Madad-Demo/about" component={AboutUs} />
-                        <Route exact path="/Madad-Demo/contact" component={Contact} />
-                        <Route exact path="/Madad-Demo/service" component={Service} />
-                        <Route exact path="/Madad-Demo/whoweare" component={Whowe} />
-                    </Switch>
-            </BrowserRouter>
-        )
-    }
+	render() {
+		return (
+			<BrowserRouter>
+					<Header />
+					<Switch>
+						<Route exact path="/Madad-Demo" component={Homepage} />
+						<Route exact path="/Madad-Demo/login" component={Index} />
+						<Route exact path="/Madad-Demo/signup" component={Index} />
+						<Route exact path="/Madad-Demo/about" component={AboutUs} />
+						<Route exact path="/Madad-Demo/contact" component={Contact} />
+						<Route exact path="/Madad-Demo/service" component={Service} />
+						<Route exact path="/Madad-Demo/whoweare" component={Whowe} />
+					</Switch>
+			</BrowserRouter>
+		)
+	}
 }
 
 ReactDOM.render(
-    <Root />,
-    document.getElementById('root')
+	<Root />,
+	document.getElementById('root')
 )
