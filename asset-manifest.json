@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Madad-Demo/static/css/main.4c4746ef.chunk.css",
-    "main.js": "/Madad-Demo/static/js/main.73f446ec.chunk.js",
-    "main.js.map": "/Madad-Demo/static/js/main.73f446ec.chunk.js.map",
+    "main.css": "/Madad-Demo/static/css/main.c0adb1ff.chunk.css",
+    "main.js": "/Madad-Demo/static/js/main.6c30c662.chunk.js",
+    "main.js.map": "/Madad-Demo/static/js/main.6c30c662.chunk.js.map",
     "runtime-main.js": "/Madad-Demo/static/js/runtime-main.28702acc.js",
     "runtime-main.js.map": "/Madad-Demo/static/js/runtime-main.28702acc.js.map",
-    "static/css/2.0c8fc136.chunk.css": "/Madad-Demo/static/css/2.0c8fc136.chunk.css",
-    "static/js/2.e2882d24.chunk.js": "/Madad-Demo/static/js/2.e2882d24.chunk.js",
-    "static/js/2.e2882d24.chunk.js.map": "/Madad-Demo/static/js/2.e2882d24.chunk.js.map",
+    "static/css/2.4b36e02c.chunk.css": "/Madad-Demo/static/css/2.4b36e02c.chunk.css",
+    "static/js/2.4fc4fab5.chunk.js": "/Madad-Demo/static/js/2.4fc4fab5.chunk.js",
+    "static/js/2.4fc4fab5.chunk.js.map": "/Madad-Demo/static/js/2.4fc4fab5.chunk.js.map",
     "index.html": "/Madad-Demo/index.html",
-    "precache-manifest.7658ea420ed53b9100b9b183532ef4c8.js": "/Madad-Demo/precache-manifest.7658ea420ed53b9100b9b183532ef4c8.js",
+    "precache-manifest.31687f958e92d2c7da8d7bbee76d7ce4.js": "/Madad-Demo/precache-manifest.31687f958e92d2c7da8d7bbee76d7ce4.js",
     "service-worker.js": "/Madad-Demo/service-worker.js",
-    "static/css/2.0c8fc136.chunk.css.map": "/Madad-Demo/static/css/2.0c8fc136.chunk.css.map",
-    "static/css/main.4c4746ef.chunk.css.map": "/Madad-Demo/static/css/main.4c4746ef.chunk.css.map",
-    "static/js/2.e2882d24.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.e2882d24.chunk.js.LICENSE.txt",
+    "static/css/2.4b36e02c.chunk.css.map": "/Madad-Demo/static/css/2.4b36e02c.chunk.css.map",
+    "static/css/main.c0adb1ff.chunk.css.map": "/Madad-Demo/static/css/main.c0adb1ff.chunk.css.map",
+    "static/js/2.4fc4fab5.chunk.js.LICENSE.txt": "/Madad-Demo/static/js/2.4fc4fab5.chunk.js.LICENSE.txt",
     "static/media/architect.svg": "/Madad-Demo/static/media/architect.0a0789d9.svg",
     "static/media/banking.svg": "/Madad-Demo/static/media/banking.c9247515.svg",
     "static/media/consultant.svg": "/Madad-Demo/static/media/consultant.3c9fa23b.svg",
@@ -31,9 +31,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.28702acc.js",
-    "static/css/2.0c8fc136.chunk.css",
-    "static/js/2.e2882d24.chunk.js",
-    "static/css/main.4c4746ef.chunk.css",
-    "static/js/main.73f446ec.chunk.js"
+    "static/css/2.4b36e02c.chunk.css",
+    "static/js/2.4fc4fab5.chunk.js",
+    "static/css/main.c0adb1ff.chunk.css",
+    "static/js/main.6c30c662.chunk.js"
   ]
 }
